@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.D.A. Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>R.D.A. Internal Platform</h1>
+        <nav>
+            <button onclick="showSection('generator')">📝 Генератор документов</button>
+            <button onclick="showSection('knowledge')">📚 База знаний</button>
+            <button onclick="showSection('application')">🧾 Вступление</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="generator" class="content-section">
+            <h2>Генератор документов</h2>
+            <textarea placeholder="Здесь будет документ..."></textarea>
+        </section>
+
+        <section id="knowledge" class="content-section" style="display:none;">
+            <h2>База знаний</h2>
+            <p>📖 Устав, кодекс, структура, коды документов — всё собрано тут.</p>
+            <textarea>⚖️ КОДЕКС АГЕНТА R.D.A.... (сюда можно вставить все данные)</textarea>
+        </section>
+
+        <section id="application" class="content-section" style="display:none;">
+            <h2>Форма вступления</h2>
+            <form>
+                <label>Позывной: <input type="text"></label><br>
+                <label>Возраст: <input type="number"></label><br>
+                <label>Локация: <input type="text"></label><br>
+                <label>Платформа: <input type="text"></label><br>
+                <label>Опыт: <textarea></textarea></label><br>
+                <label>Причина интереса: <textarea></textarea></label><br>
+                <label>Подразделение: <input type="text"></label><br>
+                <label>Дата: <input type="date"></label><br>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
